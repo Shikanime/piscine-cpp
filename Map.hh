@@ -15,17 +15,17 @@ private:
     void fillCells(void);
 public:
     Map(void);
-    Map(Map&&) noexcept;
-    Map(Map const&) = delete;
+    Map(Map&& map) noexcept;
+    Map(Map const& map) = delete;
     ~Map(void);
 
-    Map& operator=(Map const&) = delete;
-    Map& operator=(Map&&) noexcept;
+    Map& operator=(Map const& map) = delete;
+    Map& operator=(Map&& map) noexcept;
 
     CellType getCell(const int x, const int y) const noexcept;
     CellProperty getCellProperties(const int x, const int y) const noexcept;
     CellType** parseMap(const int *width, const int *height) noexcept;
-    bool canGo(int x, int y, Unit const&) const noexcept;
+    bool canGo(int x, int y, Unit const& unit) const noexcept;
 };
 
 #endif

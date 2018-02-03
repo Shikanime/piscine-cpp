@@ -13,13 +13,13 @@ private:
     bool _monster;
 
 public:
-    CellProperty(const bool, const bool, const bool, const bool, const bool) noexcept;
-    CellProperty(const CellType) noexcept;
+    CellProperty(const bool walkable, const bool swimmable, const bool flyable, const bool event, const bool monster) noexcept;
+    CellProperty(const CellType cell) noexcept;
 
-    bool operator==(CellProperty) const noexcept;
-    bool operator!=(CellProperty) const noexcept;
+    bool operator==(CellProperty property) const noexcept;
+    bool operator!=(CellProperty property) const noexcept;
 
-    bool isEqual(const CellProperty) const noexcept;
+    bool isEqual(const CellProperty cell) const noexcept;
     bool isWalkable(void) const noexcept;
     void setWalkable(void) noexcept;
     void setNotWalkable(void) noexcept;

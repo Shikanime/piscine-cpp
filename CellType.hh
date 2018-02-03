@@ -8,7 +8,7 @@ enum CellType {
     MountainCell = 'M'
 };
 
-CellType** parseMap() noexcept;
+CellType** parseMap(void) noexcept;
 void freeMap(CellType **map) noexcept;
 
 #endif
