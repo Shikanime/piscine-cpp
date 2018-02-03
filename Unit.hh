@@ -11,6 +11,8 @@ private:
 public:
     Unit(const int x, const int y) noexcept;
 
+    int getPositionX(void) const noexcept;
+    int getPositionY(void) const noexcept;
     virtual UnitField getField(void) const noexcept = 0;
 };
 
