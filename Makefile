@@ -10,7 +10,7 @@
 # CONFIGURATIONS
 #
 
-OUTNAME := a.output
+OUTNAME := a.out
 
 OBJDIR := .cache
 OUTDIR := .
