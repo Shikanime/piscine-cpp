@@ -10,6 +10,7 @@ private:
     int _y;
 public:
     Unit(const int x, const int y) noexcept;
+    virtual ~Unit() noexcept;
 
     int getPositionX(void) const noexcept;
     int getPositionY(void) const noexcept;

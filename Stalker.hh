@@ -6,7 +6,7 @@
 class Stalker : public Unit
 {
 public:
-	UnitField getField(void) const noexcept;
+	UnitField getField(void) override const noexcept;
 };
 
 #endif
